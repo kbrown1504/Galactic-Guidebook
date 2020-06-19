@@ -23,7 +23,7 @@ class Planet {
     var lengthOfYear : Double?
     var diameter : Int?
     var funFact : String?
-    //Paragraph form
+    //Paragraph form for long description
     var longDescription : String?
     var link : URL?
     

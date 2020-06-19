@@ -34,7 +34,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //returns completed cell
         return cell
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +42,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
         //Sets up the delegate and data source
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
+    
+        
     }
   
 
