@@ -19,8 +19,6 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myCollectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! GalacticCollectionViewCell
         let item = globalItems[indexPath.item]
-        cell.label = UILabel(frame: cell.contentView.frame)
-        cell.imageView = UIImageView(frame: cell.contentView.frame)
         cell.label!.text = item.name
         cell.imageView!.image = item.image!
         cell.backgroundColor = UIColor.green
@@ -31,6 +29,8 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myCollectionView.allowsSelection = true
         
         myCollectionView.delegate = self
         myCollectionView.dataSource = self

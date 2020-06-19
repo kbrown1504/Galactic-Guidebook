@@ -11,8 +11,9 @@ import UIKit
 
 var globalItems : [GalacticItem] = []
 
+//Class for storing items
 class GalacticItem {
-    
+    //Defines variables
     var name : String?
     var textDescription : String?
     var image : UIImage?

@@ -101,7 +101,33 @@
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W1q-E9-T1f">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Bh-bS-icE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-6i-tre">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="29.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMd-DN-c6g">
+                                                            <rect key="frame" x="4" y="29.5" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0Bh-bS-icE" firstAttribute="leading" secondItem="W1q-E9-T1f" secondAttribute="leading" id="2gX-To-qzt"/>
+                                                <constraint firstItem="0Bh-bS-icE" firstAttribute="top" secondItem="W1q-E9-T1f" secondAttribute="top" id="KtO-IG-9eM"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Bh-bS-icE" secondAttribute="bottom" id="Os6-TF-eAh"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Bh-bS-icE" secondAttribute="trailing" id="u48-g9-KUD"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="9rd-6i-tre" id="K8f-SA-RMk"/>
+                                            <outlet property="label" destination="XMd-DN-c6g" id="gQb-Qa-Z2w"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
