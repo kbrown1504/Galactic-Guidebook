@@ -15,6 +15,8 @@
 		B3A71D19249C191600806C22 /* Galactic_Guidebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3A71D17249C191600806C22 /* Galactic_Guidebook.xcdatamodeld */; };
 		B3A71D1B249C191700806C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A71D1A249C191700806C22 /* Assets.xcassets */; };
 		B3A71D1E249C191700806C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A71D1C249C191700806C22 /* LaunchScreen.storyboard */; };
+		B3A71D26249C1A0400806C22 /* GalacticItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A71D25249C1A0400806C22 /* GalacticItem.swift */; };
+		B3FC540E249C360200B5CE62 /* GalacticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC540D249C360200B5CE62 /* GalacticCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B3A71D1A249C191700806C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3A71D1D249C191700806C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3A71D1F249C191700806C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A71D25249C1A0400806C22 /* GalacticItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalacticItem.swift; sourceTree = "<group>"; };
+		B3FC540D249C360200B5CE62 /* GalacticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalacticCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				B3A71D0E249C191600806C22 /* SceneDelegate.swift */,
 				B3A71D10249C191600806C22 /* FirstViewController.swift */,
 				B3A71D12249C191600806C22 /* SecondViewController.swift */,
+				B3FC540D249C360200B5CE62 /* GalacticCollectionViewCell.swift */,
+				B3A71D25249C1A0400806C22 /* GalacticItem.swift */,
 				B3A71D14249C191600806C22 /* Main.storyboard */,
 				B3A71D1A249C191700806C22 /* Assets.xcassets */,
 				B3A71D1C249C191700806C22 /* LaunchScreen.storyboard */,
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A71D13249C191600806C22 /* SecondViewController.swift in Sources */,
+				B3FC540E249C360200B5CE62 /* GalacticCollectionViewCell.swift in Sources */,
 				B3A71D11249C191600806C22 /* FirstViewController.swift in Sources */,
+				B3A71D26249C1A0400806C22 /* GalacticItem.swift in Sources */,
 				B3A71D0D249C191600806C22 /* AppDelegate.swift in Sources */,
 				B3A71D0F249C191600806C22 /* SceneDelegate.swift in Sources */,
 				B3A71D19249C191600806C22 /* Galactic_Guidebook.xcdatamodeld in Sources */,
