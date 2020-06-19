@@ -8,8 +8,9 @@
 
 import UIKit
 
+//Custom Collection View Controller
 class GalacticCollectionViewCell: UICollectionViewCell {
-    
+    //Outlet for imageView and label
     @IBOutlet var imageView : UIImageView!
     @IBOutlet var label : UILabel!
     
