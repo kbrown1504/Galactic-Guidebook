@@ -55,16 +55,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLa-6S-2j3">
-                                <rect key="frame" x="245" y="96" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="6Eb-rZ-rbI" kind="show" id="ayD-QY-je0"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DoG-6B-wjR" firstAttribute="top" secondItem="ogW-26-yZu" secondAttribute="bottom" constant="30" id="AhU-Pz-b5l"/>
                             <constraint firstItem="ogW-26-yZu" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="ETF-Qf-8h5"/>
@@ -79,6 +71,7 @@
                     <tabBarItem key="tabBarItem" title="TableView" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="myTableView" destination="DoG-6B-wjR" id="Xx7-xO-3Fa"/>
+                        <segue destination="6Eb-rZ-rbI" kind="show" identifier="segueToDetail" id="2AB-Zk-3Z5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r7l-Ng-skv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CVq-OE-4RA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -22,9 +22,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="968"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="WkO-Xo-29X">
-                                                <rect key="frame" x="-20" y="-29" width="454" height="335"/>
+                                                <rect key="frame" x="-19" y="-29" width="453" height="357"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="335" id="4PT-t4-81g"/>
+                                                    <constraint firstAttribute="height" constant="357" id="4PT-t4-81g"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="planet name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQp-Sv-nFX">
@@ -175,12 +175,15 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-ao-0Mw">
                                                 <rect key="frame" x="20" y="918" width="374" height="30"/>
-                                                <state key="normal" title="Link"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Learn More!">
+                                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="onLinkPressed:" destination="CVq-OE-4RA" eventType="touchUpInside" id="coG-zT-uwB"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngguru.com-4" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-qO-KDX">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars2" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-qO-KDX">
                                                 <rect key="frame" x="49" y="57" width="317" height="315"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="315" id="YpZ-Cb-FjK"/>
@@ -200,7 +203,7 @@
                                             <constraint firstItem="3Ou-ad-tP7" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="20" id="FcN-Hd-RwT"/>
                                             <constraint firstItem="iQp-Sv-nFX" firstAttribute="top" secondItem="Cca-qO-KDX" secondAttribute="bottom" constant="8" id="Gcl-zx-ckm"/>
                                             <constraint firstItem="cqg-V8-ZgK" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="20" id="Jxi-DY-Lna"/>
-                                            <constraint firstItem="iQp-Sv-nFX" firstAttribute="top" secondItem="WkO-Xo-29X" secondAttribute="bottom" constant="74" id="Kvq-S6-sYp"/>
+                                            <constraint firstItem="iQp-Sv-nFX" firstAttribute="top" secondItem="WkO-Xo-29X" secondAttribute="bottom" constant="52" id="Kvq-S6-sYp"/>
                                             <constraint firstItem="LFC-Yj-s6E" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="20" id="KyT-MA-gbA"/>
                                             <constraint firstItem="WkO-Xo-29X" firstAttribute="top" secondItem="ISm-EY-h7Z" secondAttribute="top" constant="-29" id="NWY-NV-dd4"/>
                                             <constraint firstAttribute="trailing" secondItem="HNy-wr-eir" secondAttribute="trailing" constant="20" id="V8Z-N9-ace"/>
@@ -212,7 +215,7 @@
                                             <constraint firstItem="AXO-JU-ukL" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="20" id="jBX-9X-F3V"/>
                                             <constraint firstItem="HNy-wr-eir" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="20" id="nZI-hV-jqd"/>
                                             <constraint firstAttribute="trailing" secondItem="3Ou-ad-tP7" secondAttribute="trailing" constant="20" id="ntN-YA-aIq"/>
-                                            <constraint firstItem="WkO-Xo-29X" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="-20" id="pIt-b0-8tZ"/>
+                                            <constraint firstItem="WkO-Xo-29X" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="-19" id="pIt-b0-8tZ"/>
                                             <constraint firstItem="iQp-Sv-nFX" firstAttribute="leading" secondItem="ISm-EY-h7Z" secondAttribute="leading" constant="20" id="rPc-Kb-oKa"/>
                                             <constraint firstAttribute="trailing" secondItem="cqg-V8-ZgK" secondAttribute="trailing" constant="20" id="s5f-u3-Nnd"/>
                                             <constraint firstAttribute="trailing" secondItem="SUA-ao-0Mw" secondAttribute="trailing" constant="20" id="u2o-nX-eaR"/>
@@ -258,31 +261,13 @@
             </objects>
             <point key="canvasLocation" x="515.94202898550725" y="-134.59821428571428"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cTc-QE-sEl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r7l-Ng-skv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="njK-Lq-WcX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CVq-OE-4RA" kind="relationship" relationship="rootViewController" id="2Hg-h6-xUs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rHU-Ch-moJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-394.20289855072468" y="-134.59821428571428"/>
-        </scene>
     </scenes>
     <resources>
         <image name="icons8-comet-50-2" width="50" height="50"/>
         <image name="icons8-planet-50-2" width="50" height="50"/>
         <image name="icons8-space-shuttle-50-2" width="50" height="50"/>
         <image name="icons8-telescope-50-2" width="50" height="50"/>
-        <image name="pngguru.com-4" width="1107" height="1107"/>
+        <image name="mars2" width="600" height="600"/>
         <image name="space" width="960" height="640"/>
     </resources>
 </document>
