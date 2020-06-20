@@ -88,6 +88,17 @@
             </objects>
             <point key="canvasLocation" x="1483" y="-385"/>
         </scene>
+        <!--Test-->
+        <scene sceneID="Qh3-R5-FGu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Test" id="ltd-9Y-EIe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sZB-oZ-Psh"/>
+                    <navigationItem key="navigationItem" id="9uW-IP-E1d"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktL-dC-mxv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="405"/>
+        </scene>
         <!--Collection View-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -185,6 +196,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="ltd-9Y-EIe" kind="relationship" relationship="viewControllers" id="NBD-J1-Ktr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
