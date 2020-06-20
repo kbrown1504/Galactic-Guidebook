@@ -58,11 +58,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let jupiter = Planet(name: "Jupiter", shortDesc: "Gas Giant", img: UIImage(named: "jupite")!, distanceFromSun: 778340821, lengthOfYr: 11.9, diam: 139822, fact: "Jupiter has the shortest day of all the planets.", longDesc: "Jupiter’s Great Red Spot: \n\nSituated 22° south of Jupiter’s equator, the Great Red Spot is a storm that has been raging for at least 186 years. Upper estimates suggest the storm could have been in existence for over three and a half centuries.\n\nThe first observation of the Great Red Spot was in the seventeenth century, when telescopes first started to be used. However, it is unknown whether this is the same red spot that we see today, or whether Jupiter has had many such storms that have come and gone.\n\nThe red spot spins anticlockwise and takes six (Earth) days to rotate completely. Another mystery surrounding the red spot is what makes it red. Scientists have several theories, for instance, the presence of red organic compounds.\n\nJupiter’s Atmosphere:\n\nJupiter’s atmosphere is the solar system’s largest planetary atmosphere. It is composed of hydrogen (90%) and helium (10%), in roughly the same proportions found in the Sun . It also contains much smaller amounts of other gases, such as ammonia, methane and water.", webLink: URL(string: "https://space-facts.com/jupiter/")!)
         
-        globalPlanets.append(item)
-        globalPlanets.append(mars)
         globalPlanets.append(earth)
+        
+        globalPlanets.append(mars)
+        
         globalPlanets.append(mercury)
         globalPlanets.append(jupiter)
+        globalPlanets.append(item)
         
         //Sets delegate and data source
         myTableView.dataSource = self
