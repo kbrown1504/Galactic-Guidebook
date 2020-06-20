@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r7l-Ng-skv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CVq-OE-4RA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -180,7 +180,7 @@
                                                     <action selector="onLinkPressed:" destination="CVq-OE-4RA" eventType="touchUpInside" id="coG-zT-uwB"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngguru.com-4" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-qO-KDX">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars2" translatesAutoresizingMaskIntoConstraints="NO" id="Cca-qO-KDX">
                                                 <rect key="frame" x="49" y="57" width="317" height="315"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="315" id="YpZ-Cb-FjK"/>
@@ -258,31 +258,13 @@
             </objects>
             <point key="canvasLocation" x="515.94202898550725" y="-134.59821428571428"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cTc-QE-sEl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r7l-Ng-skv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="njK-Lq-WcX">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CVq-OE-4RA" kind="relationship" relationship="rootViewController" id="2Hg-h6-xUs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rHU-Ch-moJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-394.20289855072468" y="-134.59821428571428"/>
-        </scene>
     </scenes>
     <resources>
         <image name="icons8-comet-50-2" width="50" height="50"/>
         <image name="icons8-planet-50-2" width="50" height="50"/>
         <image name="icons8-space-shuttle-50-2" width="50" height="50"/>
         <image name="icons8-telescope-50-2" width="50" height="50"/>
-        <image name="pngguru.com-4" width="1107" height="1107"/>
+        <image name="mars2" width="600" height="600"/>
         <image name="space" width="960" height="640"/>
     </resources>
 </document>

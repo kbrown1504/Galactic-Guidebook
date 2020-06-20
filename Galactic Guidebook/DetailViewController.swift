@@ -19,17 +19,22 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var funFactLabel: UILabel!
     @IBOutlet weak var planetImage: UIImageView!
     
+    var planet: Planet!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        funFactLabel.text = "A really fun fact"
-        yearLengthLabel.text = "1000 days"
-        diameterLabel.text = "212345 "
-        nameOfPlanetLabel.text = "Earth"
-        distanceLabel.text = "1234567 miles"
-        longDescriptionLabel.text = "https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly.https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly. https://github.com/ccameron1/PizzaHunter.git some really long description that will make the scroon get bigger. This will be extra long to prove that it scrolls really goodly.  "
         
+        
+
+        //set the labels to the correct fields of the planet
+        //the ?? means the value on the right is the default if the value on the right is nil
+        funFactLabel.text = "\(planet.funFact ?? "fun fact")"
+        yearLengthLabel.text = "\(planet.lengthOfYear ?? 1) days in a year"
+        diameterLabel.text = "\(planet.diameter ?? 1) miles in diameter"
+        nameOfPlanetLabel.text = planet.name
+        distanceLabel.text = "\(planet.distFromSun ?? 1.2) miles from sun"
+        longDescriptionLabel.text = planet.longDescription
+        circlePlanetImage.image = planet.image
         
         
        
