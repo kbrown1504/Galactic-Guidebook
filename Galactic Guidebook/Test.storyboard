@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FF0-39-gDT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="t1X-Gk-L2z">
+            <objects>
+                <viewController id="J0E-pP-an2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H99-lS-LpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="darkspace" translatesAutoresizingMaskIntoConstraints="NO" id="lAs-Ao-9c4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1561"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mars2" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-8Z-KNd">
+                                <rect key="frame" x="45" y="173" width="325" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MARS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC1-6d-YeM">
+                                <rect key="frame" x="0.0" y="457" width="414" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="75"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvU-xl-ygt">
+                                <rect key="frame" x="55" y="705" width="304" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
+                                <state key="normal" title="Planet Facts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pfJ-pv-pXg" kind="show" id="dbS-Mx-GOM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DUc-Tv-3pP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAr-Id-d0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="348"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="28y-hJ-LKL">
+            <objects>
+                <collectionViewController id="FF0-39-gDT" customClass="TestViewController" customModule="Galactic_Guidebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" dataMode="prototypes" id="KiY-EU-Uz9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fjt-Md-GpQ">
+                            <size key="itemSize" width="414" height="485"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="100" maxX="0.0" maxY="300"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkspace" id="Fuo-BM-yf1">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="tOb-HD-6Fo" customClass="PlanetCell" customModule="Galactic_Guidebook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="105.5" width="414" height="485"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7ts-4a-X5w">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="485"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars2" translatesAutoresizingMaskIntoConstraints="NO" id="Svz-2Y-kq3">
+                                            <rect key="frame" x="45" y="48" width="325" height="325"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="325" id="4sE-m2-R9c"/>
+                                                <constraint firstAttribute="height" constant="325" id="BHS-gW-GtE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-Mk-NV7">
+                                            <rect key="frame" x="8" y="350" width="398" height="72"/>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="65"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="2nU-Mk-NV7" secondAttribute="trailing" constant="8" id="3bF-u7-YXX"/>
+                                        <constraint firstAttribute="bottom" secondItem="2nU-Mk-NV7" secondAttribute="bottom" constant="63" id="4M2-PB-6p9"/>
+                                        <constraint firstItem="2nU-Mk-NV7" firstAttribute="leading" secondItem="7ts-4a-X5w" secondAttribute="leading" constant="8" id="JbK-Yc-5hg"/>
+                                        <constraint firstItem="Svz-2Y-kq3" firstAttribute="leading" secondItem="7ts-4a-X5w" secondAttribute="leading" constant="45" id="aap-4l-pt5"/>
+                                        <constraint firstAttribute="trailing" secondItem="Svz-2Y-kq3" secondAttribute="trailing" constant="44" id="epX-uI-zjp"/>
+                                        <constraint firstAttribute="bottom" secondItem="Svz-2Y-kq3" secondAttribute="bottom" constant="112" id="hjM-P7-5yF"/>
+                                        <constraint firstItem="Svz-2Y-kq3" firstAttribute="top" secondItem="7ts-4a-X5w" secondAttribute="top" constant="48" id="ncy-VF-Av3"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="414" height="485"/>
+                                <connections>
+                                    <outlet property="image" destination="Svz-2Y-kq3" id="kIg-vG-6z9"/>
+                                    <outlet property="planetNameLabel" destination="2nU-Mk-NV7" id="bhM-ds-Qey"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="FF0-39-gDT" id="pDT-Tb-BXc"/>
+                            <outlet property="delegate" destination="FF0-39-gDT" id="Ihc-IF-QQH"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="Ea5-za-XgB" kind="show" identifier="segueToDetail" id="sxa-bl-eBb"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3Z-Bs-gHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="359.59821428571428"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="Zdi-nM-OeZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailViewController" id="pfJ-pv-pXg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZyW-e6-iJk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otO-O8-9hw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="151"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="j2o-tN-Pr1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailViewController" id="Ea5-za-XgB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="i70-GL-lg7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFP-X4-SGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="darkspace" width="1920" height="1080"/>
+        <image name="mars2" width="600" height="600"/>
+    </resources>
+</document>

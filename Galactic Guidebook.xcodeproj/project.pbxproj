@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6D204B249C49A8007BF984 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D204A249C49A8007BF984 /* DetailViewController.storyboard */; };
+		7A6D204D249C4A0D007BF984 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D204C249C4A0D007BF984 /* DetailViewController.swift */; };
+		7A6D204F249EB580007BF984 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D204E249EB580007BF984 /* Test.storyboard */; };
+		7A6D2051249EBDB0007BF984 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D2050249EBDB0007BF984 /* TestViewController.swift */; };
+		7A6D2053249EC04C007BF984 /* PlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D2052249EC04C007BF984 /* PlanetCell.swift */; };
 		B3A71D0D249C191600806C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A71D0C249C191600806C22 /* AppDelegate.swift */; };
 		B3A71D0F249C191600806C22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A71D0E249C191600806C22 /* SceneDelegate.swift */; };
 		B3A71D11249C191600806C22 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A71D10249C191600806C22 /* FirstViewController.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A6D204A249C49A8007BF984 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		7A6D204C249C4A0D007BF984 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7A6D204E249EB580007BF984 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		7A6D2050249EBDB0007BF984 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		7A6D2052249EC04C007BF984 /* PlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCell.swift; sourceTree = "<group>"; };
 		B3A71D09249C191600806C22 /* Galactic Guidebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galactic Guidebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A71D0C249C191600806C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3A71D0E249C191600806C22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +81,11 @@
 				B3FC540D249C360200B5CE62 /* GalacticCollectionViewCell.swift */,
 				B3A71D25249C1A0400806C22 /* Planet.swift */,
 				B3A71D14249C191600806C22 /* Main.storyboard */,
+				7A6D2050249EBDB0007BF984 /* TestViewController.swift */,
+				7A6D204A249C49A8007BF984 /* DetailViewController.storyboard */,
+				7A6D204E249EB580007BF984 /* Test.storyboard */,
+				7A6D2052249EC04C007BF984 /* PlanetCell.swift */,
+				7A6D204C249C4A0D007BF984 /* DetailViewController.swift */,
 				B3A71D1A249C191700806C22 /* Assets.xcassets */,
 				B3A71D1C249C191700806C22 /* LaunchScreen.storyboard */,
 				B3A71D1F249C191700806C22 /* Info.plist */,
@@ -137,9 +152,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6D204B249C49A8007BF984 /* DetailViewController.storyboard in Resources */,
 				B3A71D1E249C191700806C22 /* LaunchScreen.storyboard in Resources */,
 				B3A71D1B249C191700806C22 /* Assets.xcassets in Resources */,
 				B3A71D16249C191600806C22 /* Main.storyboard in Resources */,
+				7A6D204F249EB580007BF984 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,12 +168,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A71D13249C191600806C22 /* SecondViewController.swift in Sources */,
+				7A6D2053249EC04C007BF984 /* PlanetCell.swift in Sources */,
 				B3FC540E249C360200B5CE62 /* GalacticCollectionViewCell.swift in Sources */,
 				B3A71D11249C191600806C22 /* FirstViewController.swift in Sources */,
 				B3A71D26249C1A0400806C22 /* Planet.swift in Sources */,
 				B3A71D0D249C191600806C22 /* AppDelegate.swift in Sources */,
 				B3A71D0F249C191600806C22 /* SceneDelegate.swift in Sources */,
 				B3A71D19249C191600806C22 /* Galactic_Guidebook.xcdatamodeld in Sources */,
+				7A6D2051249EBDB0007BF984 /* TestViewController.swift in Sources */,
+				7A6D204D249C4A0D007BF984 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

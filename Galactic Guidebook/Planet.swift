@@ -31,8 +31,14 @@ class Planet {
     init(name: String, shortDesc: String, img: UIImage, distanceFromSun: Double, lengthOfYr: Double,
          diam: Int, fact: String, longDesc: String, webLink: URL) {
         self.name = name
-        shortDescription = shortDesc
-        image = img
+        self.shortDescription = shortDesc
+        self.image = img
+        self.diameter = diam
+        self.distFromSun = distanceFromSun
+        self.lengthOfYear = lengthOfYr
+        self.funFact = fact
+        self.longDescription = longDesc
+        self.link = webLink
     }
     
 }
