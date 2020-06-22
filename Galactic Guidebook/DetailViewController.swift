@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SafariServices
 
-class DetailViewController: UIViewController {
+//make sure to add the delagate
+class DetailViewController: UIViewController, SFSafariViewControllerDelegate {
 
     @IBOutlet weak var circlePlanetImage: UIImageView!
     @IBOutlet weak var nameOfPlanetLabel: UILabel!
@@ -40,19 +42,21 @@ class DetailViewController: UIViewController {
        
     }
     
-
+    //will open a safari view controller with the link
     @IBAction func onLinkPressed(_ sender: Any) {
-    }
+        
+        if let link = planet.link {
+                   let sfvc = SFSafariViewController(url: link)
+                   sfvc.delegate = (self as! SFSafariViewControllerDelegate)
+                   
+                   present(sfvc, animated: true)
+               }
+           }
+           
     
+    //delegate method for the safari stuff
+   func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+   }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
